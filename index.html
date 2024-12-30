@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating night</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+ 
+</head>
+<body>
+   
+    <div class="container mx-auto">
+       
+        <h1 class="text-2xl" id="init">Tíu thúi ơi em bảo (●'◡'●)</h1>
+        <button onclick="startQuestions()" id="que">Ơi anh nghe ạ</button>
+
+        <div id="questions1" style="display: none;">
+            <h1 class="text-2xl mt-8">Câu 1:</h1>
+            <p>Anh có muốn đi chơi với em hem?</p>
+            <img src="./5_ask_out.jfif" width="350" height="300">
+            <br>
+            <button onclick="nextQuestions(2)">Cóa anh siu mún</button>
+            <button onclick="answerNo()" class="no">Chả thích gì </button>
+        </div>
+
+        <div id="questions2" style="display: none;">
+            <h1 class="text-2xl mt-8">Question 2:</h1>
+            <img src="./3_ask_out.jfif" width="320" height="300">
+            <p>Anh có đồng ý đưa em i sinh nhật em vào lúc 19h30 ngày 1/1/2025 hong ạ?</p>
+            <button onclick="answerYes()">Cóa anh đồng ý</button>
+            <button onclick="answerNo()" class="no">Anh khum</button>
+        </div>
+
+        <div id="message" style="display: none;">
+            <img src="./4_ask_out.jfif"  width="350" height="350" >
+            <p id="messageText"></p>
+        </div>
+        
+    </div>
+    <canvas id="confetti-canvas">
+   </canvas>
+
+
+    <footer class="text-center mt-8">
+        Made with ❤️ by Thùng Duy
+        <br> P/s: Không biết làm nên nhờ
+    </footer>
+   
+    <script src="https://cdn.jsdelivr.net/npm/confetti-js"></script>
+    <script src="script.js" ></script>
+</body>
+</html>
